@@ -6,6 +6,10 @@ Easy automated syncing between your computers and your MEGA cloud drive.
 This repository contains all the development history of the official sync client of MEGA:
 https://mega.nz/sync
 
+#### NOTICE about conflict resolution in MEGA Sync
+
+The MEGA Sync client uses the last modified date to resolve conflicts between server and client versions of files. This means that whenever your local copy differs from the copy in the server, the one with the last modified date (with respect to the local time) will be preserved, and the older file will be deleted, REGARDLESS OF ITS CONTENT.
+
 #### Supported Platforms
 
 * Microsoft Windows operating systems
